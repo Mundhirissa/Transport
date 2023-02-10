@@ -13,13 +13,12 @@ import javax.persistence.Id;
     public class Voter {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int voterid;
+            private int id;
         private String fname;
         private String lname;
         private String address;
-        private String candname;
-        private String candposition;
-        private String candparty;
+        private String car_class;
+        private String blood_group;
 
     }
 
