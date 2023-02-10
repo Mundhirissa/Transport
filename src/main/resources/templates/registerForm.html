@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="/webjars/bootstrap/5.1.3/css/bootstrap.css">
 </head>
 <body>
-
 <div class="container">
 
     <div class="row mt-3">
         <form th:action="@{/saveVoter}" th:object="${register}" method="post">
             <div class="row">
                 <div class="col-6">
-                    <input type="text" th:field="*{candname}" class="form-control mb-2" id="middleNameEdit" name="candname" placeholder="car class" aria-label="Last name" required>
+                    <input type="text" th:field="*{blood_group}" class="form-control mb-2" id="middleNameEdit" name="candname" placeholder="car class" aria-label="Last name" required>
                 </div>
                 <div class="col-6">
                     <input type="text" th:field="*{address}" class="form-control" id="firstNameEdit" name="address" placeholder="address" aria-label="First name" required>
@@ -22,7 +21,7 @@
             <div class="row">
 
                 <div class="col-6">
-                    <input type="text" th:field="*{candposition}" class="form-control mb-2" id="lastNameEdit"  name="candposition" placeholder="Blood group" aria-label="First name" required>
+                    <input type="text" th:field="*{car_class}" class="form-control mb-2" id="lastNameEdit"  name="candposition" placeholder="Blood group" aria-label="First name" required>
                 </div>
 <!--                <div class="col-6">-->
 <!--                    <input type="text" th:field="*{candparty}" class="form-control mb-2" id="partyEdit" name="candparty" placeholder="candidate party" aria-label="Last name" required>-->
@@ -46,6 +45,7 @@
     </div>
 
 </div>
+
 
 <script src="/webjars/jquery/3.5.1/dist/jquery.min.js"></script>
 <script src="/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
